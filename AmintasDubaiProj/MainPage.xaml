@@ -13,40 +13,41 @@
         VerticalOptions="Center" 
         HorizontalOptions="Center"
         Margin="10"/>
-        <Image Source="logo_green.png" 
+            <Image Source="logo_green.png" 
            Margin="0,0,0,0"
            HeightRequest="150" 
            WidthRequest="150" />
-        <Label 
-        IsVisible="false"
-        Text="Número da Sorte!"
-        Margin="0,20,0,120"
-        TextColor="DarkCyan"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" />
-            <VerticalStackLayout>
+            <Label 
+                x:Name="NameAppTile"
+                Text="Número da Sorte!"
+                Margin="0,20,0,120"
+                TextColor="DarkCyan"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+            />
+            <VerticalStackLayout IsVisible="false" x:Name="ContainerLuckNumbers">
                 <Label 
                     Text="Número da sorte é:"
                     HorizontalOptions="Center"
                     Margin="0,20,0,0"/>
                 <HorizontalStackLayout HorizontalOptions="Center" Spacing="5" Margin="0,70">
                         <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
-                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        <Label Text="" FontSize="24" x:Name="LuckNumber01" TextColor="DarkCyan" />
                         </Border>
                         <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
-                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        <Label Text="" FontSize="24" x:Name="LuckNumber02" TextColor="DarkCyan" />
                         </Border>
                         <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
-                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        <Label Text="" FontSize="24" x:Name="LuckNumber03" TextColor="DarkCyan" />
                         </Border>
                         <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
-                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        <Label Text="" FontSize="24" x:Name="LuckNumber04" TextColor="DarkCyan" />
                         </Border>
                         <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
-                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        <Label Text="" FontSize="24" x:Name="LuckNumber05" TextColor="DarkCyan" />
                         </Border>
                         <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
-                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        <Label Text="" FontSize="24" x:Name="LuckNumber06" TextColor="DarkCyan" />
                         </Border>
                     </HorizontalStackLayout>
                 <Label 
@@ -54,8 +55,7 @@
                     HorizontalOptions="Center"
                     Margin="0,0,0,50"/>
             </VerticalStackLayout>
-        <Button 
-        Text="Gerar Numintas da Sorte" HorizontalOptions="Center"
+            <Button Clicked="ButtonLuckGeneretor_Clicked" Text="Gerar Numintas da Sorte" x:Name="ButtonLuckGeneretor" HorizontalOptions="Center"
         />
     </VerticalStackLayout>
     </ScrollView>
