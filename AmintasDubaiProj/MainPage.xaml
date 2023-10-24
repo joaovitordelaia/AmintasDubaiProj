@@ -3,10 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AmintasDubaiProj.MainPage"
              Title="MainPage">
+    <ScrollView> 
     <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
 
         <Label 
         Text="Cassino do Amintas"
+        FontSize="24"
         TextColor="DarkCyan"
         VerticalOptions="Center" 
         HorizontalOptions="Center"
@@ -22,27 +24,39 @@
         TextColor="DarkCyan"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
-        <Label 
-        Text="Número da sorte é:"
-        HorizontalOptions="Center"
-        Margin="0,20,0,0"
-        />
-        <HorizontalStackLayout>
-            <Label Text="01" TextColor="DarkCyan" />
-            <Label Text="01" TextColor="DarkCyan" />
-            <Label Text="01" TextColor="DarkCyan" />
-            <Label Text="01" TextColor="DarkCyan" />
-            <Label Text="01" TextColor="DarkCyan" />
-            <Label Text="01" TextColor="DarkCyan" />
-        </HorizontalStackLayout>
-
-        <Label 
-        Text="Boa Sorte!"
-        HorizontalOptions="Center"
-        Margin="0,0,0,50"
-        />
+            <VerticalStackLayout>
+                <Label 
+                    Text="Número da sorte é:"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,0"/>
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="5" Margin="0,70">
+                        <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
+                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        </Border>
+                        <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
+                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        </Border>
+                        <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
+                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        </Border>
+                        <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
+                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        </Border>
+                        <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
+                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        </Border>
+                        <Border Stroke="DarkCyan" Padding="10,5" StrokeShape="RoundRectangle 8">
+                            <Label Text="01" FontSize="24" TextColor="DarkCyan" />
+                        </Border>
+                    </HorizontalStackLayout>
+                <Label 
+                    Text="Boa SortIntas!"
+                    HorizontalOptions="Center"
+                    Margin="0,0,0,50"/>
+            </VerticalStackLayout>
         <Button 
         Text="Gerar Numintas da Sorte" HorizontalOptions="Center"
         />
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
