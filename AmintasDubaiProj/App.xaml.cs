@@ -5,7 +5,7 @@
         public App()
         {
             InitializeComponent();
-
+            //x:Class="AmintasDubaiProj.MainPage"
             MainPage = new MainPage();
         }
     }
